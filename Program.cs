@@ -77,12 +77,11 @@ if (dia < 1 || dia > 31)
 Console.Write("Qual o mes do aniversario da vitima?(1 até 12):");
 mes = Convert.ToInt32(Console.ReadLine());
 if (mes < 1 || mes > 12)
-
+   return;
 {  
     Console.ForegroundColor = ConsoleColor.Red;
     Console.WriteLine("Esse mês não é compatível");
     Console.ResetColor();
-    return;
 }
 
 if (mes<8&&dia>30&&mes%2==0)
